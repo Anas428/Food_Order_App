@@ -32,9 +32,9 @@ private RecyclerView recyclerViewCategoryList, recyclerViewPopularList;
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> FoodList = new ArrayList<>();
-        FoodList.add(new FoodDomain("Pepperoni Pizza", "pizza1", "", 9.76));
-        FoodList.add(new FoodDomain("Cheese Burger", "burger", "", 8.76));
-        FoodList.add(new FoodDomain("Vegetable Pizza", "pizza2", "", 11.24));
+        FoodList.add(new FoodDomain("Pepperoni Pizza", "pizza1", "slices pepperoni ,mozzarella cheese, fresh oregano,  ground black pepper, pizza sauce", 9.76));
+        FoodList.add(new FoodDomain("Cheese Burger", "burger", "beef, Gouda Cheese, Special sauce, Lettuce, tomato", 8.76));
+        FoodList.add(new FoodDomain("Vegetable Pizza", "pizza2", "olive oil, Vegetable oil, pitted Kalamata, cherry tomatoes, fresh oregano, basil", 11.24));
 
         adapter2 = new PopularAdapter(FoodList);
         recyclerViewPopularList.setAdapter(adapter2);

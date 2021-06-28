@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.food_hub.Domain.FoodDomain;
+import com.android.food_hub.Helper.ManagementCard;
 import com.android.food_hub.R;
 import com.bumptech.glide.Glide;
 
@@ -18,11 +19,13 @@ public class ShowDetailActivity extends AppCompatActivity {
     private ImageView plusBtn, minusBtn, picFood;
     private FoodDomain object;
     private int numberOrder = 1;
+    private ManagementCard managementCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_detail);
 
+        managementCard = new ManagementCard(this);
         initView();
         getBundle();
     }
@@ -62,7 +65,8 @@ public class ShowDetailActivity extends AppCompatActivity {
         addtoCartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                object.setNumberInCard(numberOrder);
+                managementCard.insertFood(object);
             }
         });
     }
