@@ -21,9 +21,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
-                android:gravity="center_horizontal"
                 android:text="Title"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textColor="#373b54"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -32,7 +32,6 @@
                 android:id="@+id/priceTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:text="$"
                 android:textAlignment="center"
                 android:textColor="#ff5e00"
@@ -63,7 +62,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:gravity="center_horizontal"
                     android:text="1"
                     android:textAlignment="center"
                     android:textColor="#373b54"
@@ -76,7 +74,6 @@
                     android:layout_height="wrap_content"
 
                     app:srcCompat="@drawable/plus" />
-
             </LinearLayout>
 
             <TextView
@@ -96,13 +93,13 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_margin="16dp"
-        android:text="Add to Cart"
         android:background="@drawable/orange_button_background"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="25sp"
         android:elevation="3dp"
+        android:gravity="center"
+        android:text="Add to Card"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
